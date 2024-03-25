@@ -1,0 +1,9 @@
+.block_about_description {
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+   .title_about {
+        height: 16px;
+        font-size: 20px;
+    }
+}

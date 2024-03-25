@@ -1,0 +1,99 @@
+/*Список магазинов*/
+.block_shop {
+    display: flex;
+    align-items: center;
+    /* transition: all ease 4s; */
+    overflow-x: scroll;
+    
+}
+.block_shop:hover {
+    .button_cartochka_right {
+         position: absolute;
+         opacity: 1;
+     }
+     .button_cartochka_left {
+         position: absolute;
+         opacity: 1;
+     }
+ }
+.shop_cartochka_block {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    transition: all ease 4s;
+    
+}
+.shop_cartochka_block a {
+    text-decoration: none;
+}
+.block_shop::-webkit-scrollbar {
+    /* border: 1px solid black; */
+    /* width: 0; */
+    height: 0;
+}
+.button_cartochka_left {
+    width: 50px;
+    height: 100px;
+    position: absolute;
+    border: none;
+    fill: white;
+    left: 0;
+    opacity: 0;
+    padding: 0;
+    background: rgba(0, 0, 0, 0.158);
+}
+.button_cartochka_right {
+    width: 50px;
+    height: 100px;
+    position: absolute;
+    opacity: 0;
+    padding: 0;
+    right: 0;
+    fill: white;
+    background: rgba(0, 0, 0, 0.158);
+    border: none;
+}
+.shop_cartochka {
+    min-width: 150px;
+    height: 100px;
+    background: white;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.image_shop_cartochka {
+    max-height: 40px;
+    max-width: 100px;
+}
+
+.image_shop_all {
+    width: 50px;
+}
+.container_shop_all {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+  
+.title_image_shop_all {
+    margin: 0;
+    font-size: 14px;
+    color: black;
+    text-align: center;
+}
+
+
+@media all and (max-width: 650px) {
+    .button_cartochka_left {
+       display: none;
+    }
+    .button_cartochka_right {
+        display: none;
+    }
+}
+  

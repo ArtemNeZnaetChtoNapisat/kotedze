@@ -1,0 +1,261 @@
+  /*Вывод скидок*/
+  .block_cartochka_content {
+    /* margin-top: 80px; */
+    /* background: #e8e8e8; */
+    max-width: 869px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    box-sizing: border-box;
+    height: 100%;
+    position: relative;
+    align-items: stretch
+}
+.information__content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.cartochka_content {
+    margin-top: 10px;
+    max-width: 869px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    display: flex;
+    background: white;
+    cursor: pointer;
+    border-radius: 10px;
+    flex-direction: column;
+    transition: all ease 0.5s;
+}
+.cartochka_content *{
+    text-decoration: none;
+    color: none;
+    color: black;
+}
+    .cartochka_content:hover {
+        transform: scale(103%);
+    }
+    .image_content_block {
+        width: 192px;
+        height: 192px;
+        border-radius: 12px;
+        background: white;
+        display: flex;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        background: white;
+    }
+    .image_content {
+    /* background: #e0e0e0; */
+    max-height: 192px;
+    max-width: 192px
+}
+
+#text_content {
+    margin-top: 0px;
+    margin-left: 10px;
+    max-width: 400px;
+    height: auto;
+   
+}
+
+#description_content {
+    margin-top: 10px;
+    margin-left: 10px;
+    max-width: 500px;
+    min-height: 20px;
+    text-overflow: ellipsis;
+}
+.cena_cartochka_content {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-left: 10px;
+}
+    .cena_cartochka_content p {
+        font-size: 20px;
+        color: #CE0057;
+        font-weight: 600;
+    }
+    .cena_cartochka_content del{
+        font-size: 15px;
+        color: #808080;
+        margin-left: 3px;
+        text-decoration: line-through;
+    }
+
+.buttom_content {
+    display: flex;
+    justify-content: center; /*Центрирование по горизонтали*/
+    align-items: center; /*Центрирование по вертикали */
+}
+#auchor_nickname_content {
+    margin-left: 200px;
+}
+    /*#auchor_nickname_content svg :hover {
+        border-bottom: 1px solid #CE0057;
+        fill: red;
+    }*/
+    #auchor_nickname_content:hover {
+        text-decoration: underline;
+        fill: #CE0057;
+        color: #CE0057;
+    }
+
+.button_content {
+    margin-top: auto;
+    margin-left: auto;
+    padding: 15px;
+    width: 100px;
+    background: #e0e0e0;
+    text-align: center;
+    border-radius: 6px;
+    transition: all ease 0.5s;
+}
+
+/* Mobile version */
+
+@media all and (max-width: 650px) {
+ /*Вывод скидок*/
+ .block_cartochka_content {
+    padding-top: 5px;
+    
+}
+
+.information__content {
+    /* max-width: 393px; */
+    height: 100%;
+}
+
+
+.button_cartochka_left {
+  display: none;
+}
+.button_cartochka_right {
+    display: none;
+}
+
+.cartochka_content {
+    margin-top: 10px;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    background: white;
+    cursor: pointer;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    transition: all ease 0.5s;
+    align-items: stretch;
+}
+
+    .cartochka_content:hover {
+        transform: none;
+    }
+    .image_content_block {
+        width: 92px;
+        height: 92px;
+        border-radius: 12px;
+        background: white;
+        display: flex;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        /* background: #e0e0e0; */
+    }
+    .image_content {
+    max-width: 92px;
+    max-height: 92px;
+    /* background: #e0e0e0; */
+}
+
+
+#text_content {
+    margin-left: 10px;
+    max-width: 400px;
+    height: auto;
+   
+}
+#text_content h2{
+     font-size: 15px; 
+}
+
+#description_content {
+    margin-top: 0px;
+    margin-left: 10px;
+    max-width: 500px;
+    max-height: 30px;
+    text-overflow: ellipsis;
+    font-size: 15px;
+    overflow: hidden;
+    white-space: pre-wrap;
+    display: none;
+}
+
+
+.cena_cartochka_content {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-left: 10px;
+}
+
+    .cena_cartochka_content p {
+        font-size: 20px;
+        color: #CE0057;
+        font-weight: 600;
+    }
+
+    .cena_cartochka_content del {
+        font-size: 15px;
+        color: #808080;
+        margin-left: 3px;
+    }
+
+.buttom_content {
+    display: flex;
+    justify-content: center; /*Центрирование по горизонтали*/
+    align-items: center; /*Центрирование по вертикали */
+    width: 100%;
+}
+
+#auchor_nickname_content {
+    margin-left: 10px;
+}
+    /*#auchor_nickname_content svg :hover {
+    border-bottom: 1px solid #CE0057;
+    fill: red;
+}*/
+    #auchor_nickname_content:hover {
+        text-decoration: underline;
+        fill: #CE0057;
+        color: #CE0057;
+    }
+
+.button_content {
+    margin-top: auto;
+    margin-left: auto;
+    padding: 15px;
+    width: 100px;
+    background: #e0e0e0;
+    text-align: center;
+    border-radius: 6px;
+    transition: all ease 0.5s;
+}
+
+    .button_content:hover {
+        box-shadow: 0 1px 3px rgb(133 133 133);
+        background: #e6e6e6;
+    }
+
+    .button_content:active {
+        box-shadow: none;
+        background: #e0e0e0;
+    }
+ /*Конец ----------Вывод скидок*/
+}
